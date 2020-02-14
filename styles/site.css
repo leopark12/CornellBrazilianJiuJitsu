@@ -1,0 +1,734 @@
+body{
+  margin:0;
+  font-family: 'SourceSansProLight', sans-serif;
+}
+@font-face {
+  font-family:"Alasti-Regular";
+  src:url('../fonts/Alasti-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family:"SourceSansProLight";
+  src: url("../fonts/SourceSansPro-Light.ttf") format('truetype');
+}
+
+header{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  margin:0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+p{
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.logo{
+  width:150px;
+  height:150px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+/*Text Styling*/
+h1{
+
+}
+.sign-up{
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+
+}
+.basics{
+  text-align: center;
+
+}
+/*Navigation Bar Styling*/
+#hamburger{
+    background: none;
+    border: none;
+    color:black;
+    font-size: 32px;
+    margin-right:20px;
+}
+nav{
+  height:150px;
+  width: 80%;
+}
+
+.navigation{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin:0;
+  margin-right:40px;
+  height: 150px;
+}
+
+.navigation a{
+    transition-duration: 250ms;
+    line-height: 200px;
+    text-decoration: none;
+    color:black;
+    font-family:"SourceSansProLight", sans-serif;
+    font-weight: bold;
+    font-size:18px;
+    text-transform: uppercase;
+    margin:auto 0;
+    letter-spacing: 0.3em;
+}
+.navigation a:hover{
+    transition-duration:250ms;
+    font-size: 21px;
+    color: #a42e2e;
+}
+.navigation a.active{
+    color: #a42e2e;
+}
+/*Homepage Styling*/
+
+.slider{
+  width: 100%;
+}
+
+.slider #carousel{
+  margin: 0px;
+  left: 0px;
+}
+
+.slider #carousel #carousel-image{
+  width: 100%;
+  float: left;
+}
+.arrows{
+  margin: 0 auto 0 auto;
+  width: 200px;
+}
+
+#prev{
+  margin-right: 20px;
+}
+
+.description{
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#abouttheclub, #wherewhen{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#abouttheclub{
+  margin-right: 20px;
+}
+
+#wherewhen{
+  margin-left: 20px;
+}
+
+#beltsystem{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*Basics styling*/
+.videos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.videos figure{
+    width:300px;
+    height:300px;
+    margin: 10px calc(calc(100% - 900px) / 6);
+}
+.videos figcaption{
+    text-align: center;
+}
+
+figcaption.d{
+  text-align: center;
+}
+figure.c{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+img.i{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.t{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.u{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team{
+  text-align:center;
+}
+
+p.e{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+p.basics-text{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul.basics-list{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure.jiujitsu{
+  width: 800px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+img.jiujitsu{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+figcaption.jiujitsu{
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+/*meet the team*/
+.a{
+  margin-left: 540px;
+  font-family: 'SourceSansProLight', sans-serif;
+}
+.b{
+  margin-left: 50px;
+  font-family: 'SourceSansProLight', sans-serif;
+}
+div.row{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.e{
+
+  font-family: 'SourceSansProLight', sans-serif;
+  margin-top: 20px;
+}
+
+.row{
+  display:flex;
+  margin-left: 0px;
+}
+.col{
+  flex-direction: column;
+}
+
+
+/*calendar site stuff*/
+.calendar{
+    height:700px;
+    width:80%;
+    margin:50px auto;
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+}
+.calendar_header{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    background-color: white;
+    height:75px;
+}
+.calendar_nav{
+    width: 50px;
+    height:50px;
+    margin:10px;
+}
+.calendar figcaption{
+    color:white;
+}
+
+.calendar_title{
+    color:white;
+    font-family:"SourceSansProLight", sans-serif;
+    font-weight: bold;
+    font-size:28px;
+    text-transform: uppercase;
+    margin:auto 0;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color:#a42e2e;
+}
+.day_titles{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap:nowrap;
+    background-color: #a42e2e;
+    color:white;
+    height:40px;
+    line-height: 40px;
+    margin:0px;
+    padding:0px;
+    font-size: 24px;
+}
+.mobile{
+    display:none;
+}
+.day_titles *{
+    width:calc(100% / 7);
+    text-align: center;
+    font-weight: bold;
+}
+.calendar_days{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+  height:calc(100% - 75px - 40px);
+}
+.calendar_days > div{
+  border: 1px solid black;
+  width: calc((100% / 7) - 2px);
+  height:calc((100%/6) - 2px);
+}
+.calendar_days a{
+    width:100%;
+    height:100%;
+    display: inline-block;
+}
+.day_label{
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+.day_label:hover{
+    background:#a42e2e;
+    color:white;
+}
+.inactive_day{
+    cursor:default;
+    background: #adb0b5 !important;
+}
+
+.pop_up{
+    border:4px solid black;
+    height:400px;
+    width:50%;
+    position:fixed;
+    margin:auto auto;
+    top:calc(50% - 200px);
+    left:25%;
+}
+.pop_up_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0 20px;
+    background: white;
+    height:60px;
+}
+.pop_up_title{
+    margin: 20px;
+    line-height: 100%;
+    color: #a42e2e;
+
+}
+.pop_up button{
+    color:#a42e2e;
+    background: none;
+    border:none;
+    font-size: 48px;
+    padding:10px;
+    margin:0;
+}
+.pop_up button{
+    color:#a42e2e !important;
+    background: none !important;
+}
+
+.calendar_description_titles{
+    display: flex;
+    flex-direction: row;
+    background: #a42e2e;
+    height:40px;
+    line-height: 40px;
+}
+.calendar_description_titles h3:first-child{
+    width: 30%;
+}
+.calendar_description_titles h3{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    width:100%;
+    margin:0;
+
+}
+.calendar_descriptions{
+    background: white;
+    height: calc(100% - 100px);
+    display:flex;
+    flex-direction: row;
+}
+.times{
+    width: 30%;
+}
+.events{
+    width: 70%;
+}
+.times, .events{
+    height:100%;
+    border-right: 2px solid black;
+    margin:0;
+    list-style: none;
+    font-size: 24px;
+}
+.times li, .events li{
+    margin:30px 10px;
+}
+
+/* end of calendar */
+
+/* Signups Styling - Ava*/
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+}
+input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+
+}
+label{
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.listserv-radio{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.label-radio{
+  display: flex;
+  flex-direction: row;
+}
+
+.align{
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.textbox{
+  margin-top: 5px;
+}
+.error_message {
+  display: flex;
+  font-size: 14px;
+  color: red;
+}
+.waiver{
+  text-align: center;
+}
+button {
+    margin-top: 10px;
+    align-self: center;
+    padding: 5px 20px 5px 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-family: "SourceSansProLight", Roboto, sans-serif;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.hidden{
+  display: none;
+}
+
+/*Footer Styling*/
+.footer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+.footer p{
+  font-size: 12px;
+}
+
+@media (max-width:1350px){
+    .navigation{
+        padding:0;
+    }
+    .navigation a{
+        transition-duration: 250ms;
+        font-size: 90%;
+    }
+}
+
+/* tablet responsiveness*/
+@media (max-width: 1000px) {
+
+html, body{
+  width: 100%;
+  height:100%;
+  margin:0;
+  padding:0;
+
+}
+/*nav styling*/
+nav{
+    width:100%;
+    height: calc(100% - 152px);
+    position: fixed;
+    top:152px;
+    background: white;
+}
+.navigation{
+    flex-direction: column;
+    z-index:2;
+    z-index: 2;
+    padding: 0;
+    margin:0;
+    height: 100%;
+}
+.navigation li{
+    width:100%;
+    text-align: center;
+    border: 1px solid #a42e2e;
+    height:20%;
+
+}
+.navigation a{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    line-height: 100px;
+}
+/*Homepage Styling*/
+
+.description{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#abouttheclub, #wherewhen{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#abouttheclub{
+  margin-right: auto;
+}
+
+#wherewhen{
+  margin-left: auto;
+}
+
+.videos{
+    flex-direction: column;
+}
+.videos figure{
+    margin: 10px auto;
+}
+
+/*calendar stuff*/
+.calendar{
+    height:400px;
+}
+.calendar_nav{
+    width:30px;
+    height:30px;
+}
+.calendar_title{
+    font-size: 20px;
+
+}
+.pop_up{
+    position:relative;
+    top:0;
+    left:0;
+    margin:10px auto;
+    width:80%;
+    z-index: -1;
+    overflow-y: scroll;
+}
+.pop_up_header{
+    display: none;
+}
+.times,.events{
+    padding-left:0;
+    font-size: 20px;
+    text-align: center;
+    height:100%;
+    overflow-y: auto;
+}
+.times li, .events li{
+    margin-bottom:30px;
+    height:75px;
+}
+.events li{
+    line-height: 75px;
+}
+.calendar_descriptions{
+    height:calc(100% - 40px);
+}
+.desktop{
+    display: none;
+}
+.mobile{
+    display:inline-block;
+}
+/*end of calendar*/
+
+/*Basics Styling*/
+p.basics-text{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5em;
+}
+ul.basics-list{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure.jiujitsu{
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+img.jiujitsu{
+  width: 95%;
+}
+p.e{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure.c{
+  width: 100%;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.i{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.t{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.u{
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+
+
+
+/* mobile responsiveness*/
+@media (max-width: 600px) {
+
+div#abouttheclub{
+  margin-left: 40px;
+}
+div#wherewhen{
+  margin-left: 40px;
+}
+p#beltsystem{
+  margin-right: 80px;
+}
+div.footer{
+  margin-right: 80px;
+}
+div.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.col{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.row{
+  flex-wrap: wrap;
+}
+h1.a{
+  margin-left: 50px;
+}
+}
+
+/* tablet responsiveness*/
+@media (max-width: 900px) {
+  div.row{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .col{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .row{
+    flex-wrap: wrap;
+  }
+  h1.a{
+    margin-left: 50px;
+  }
+  }

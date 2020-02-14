@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sign Ups & Forms</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="scripts/effects.js"></script>
+  <script src="scripts/validation.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <!-- Source: Jonna Chen 2019 -->
+        <a href="index.html"><img class="logo" alt="logo" src="images/logo.png"/></a>
+        <button id="hamburger" type="button" class="mobile">&#9776;</button>
+        <nav class="desktop">
+            <ul class="navigation">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="basics.html">Jiu-Jitsu Basics</a> </li>
+                <li> <a href="calendar.html">Calendar</a> </li>
+                <li> <a href="team.html">Meet the Team</a> </li>
+                <li> <a href="signups.html" class="active">Sign Ups & Forms</a></li>
+            </ul>
+        </nav>
+
+    </header>
+  <h1 class="sign-up">Sign Up</h1>
+  <h3 class="sign-up">Fill out the form below to join the ListServ and find out more information about our club!</h3>
+
+  <form id="ListServForm" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+
+    <div class="form-label">
+        <label for="name" class="align">Name*:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error_message hidden" id="nameError">
+                *Must enter a valid name.
+            </span>
+    </div>
+    <div class="form-label">
+        <label for="email" class="align">Email*:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error_message hidden" id="emailError">
+                *Must enter a valid email address.
+            </span>
+    </div>
+    <div class="label-radio">
+      <label class="align">What's your skill level?*:</label>
+      <div class="level">
+          <div class="radio">
+              <input type="radio" id="advanced" name="level" value="advanced">
+              <label for="advanced">Advanced</label>
+          </div>
+          <div class="radio">
+              <input type="radio" id="intermediate" name="level" value="intermediate">
+              <label for="intermediate">Intermediate</label>
+          </div>
+          <div class="radio">
+              <input type="radio" id="beginner" name="level" value="beginner" checked>
+              <label for="beginner">Beginner</label>
+          </div>
+      </div>
+    </div>
+      <div class="text-box">
+          <label for="interest" class="align">Why are you interested in jiu-jitsu?</label>
+          <div class="textbox">
+              <textarea id="interest" name="interest" rows="7" cols="40" minlength="10" maxlength="500"></textarea>
+              <span class="error_message hidden" id="interestError">*Please submit a response that is 10 to 500 characters in length.
+              </span>
+          </div>
+      </div>
+      <div class="form-label">
+        <label class="align">Would you like to be added to our ListServ?*</label>
+          <div class="listserv">
+              <div class="listserv-radio">
+                  <input type="radio" id="yes" name="listServ" value="yes" checked>
+                  <label for="yes">Yes</label>
+              </div>
+              <div class="listserv-radio">
+                  <input type="radio" id="no" name="listServ" value="no">
+                  <label for="no">No</label>
+              </div>
+          </div>
+      </div>
+      <button type="submit">Submit</button>
+  </form>
+
+  <h3 class="waiver"><a href="https://cornell.campusgroups.com/cubjj/home/" target="_blank">Fill out this Waiver Form to finish joining!</a></h3>
+  <div class = "footer">
+    <p>Source for Font: <a href="https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro">Google Fonts</a>.</p>
+    <p>Website Created By Asher Lipman, Ava Tan, Jonna Chen, and Leo Park, 2019.</p>
+  </div>
+
+</body>
+</html>
